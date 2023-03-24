@@ -1,0 +1,28 @@
+
+<app-ui-tabs>
+    <app-ui-tab-item [tabName]="tab1" [templateRef]="firstTemplate" [content]="content1"></app-ui-tab-item>
+    <app-ui-tab-item [tabName]="tab2" [templateRef]="secondTemplate" [content]="content2"></app-ui-tab-item>
+    <app-ui-tab-item [tabName]="tab3" [templateRef]="thirdTemplate" [content]="content3"></app-ui-tab-item>
+</app-ui-tabs>
+
+<ng-template #firstTemplate let-content="content">
+    <div class="first-wrapper">
+        <h3>{{content.title}}</h3>
+        <p>{{content.description}}</p>
+    </div>
+</ng-template>
+
+<ng-template #secondTemplate let-content="content">
+    <div class="second-wrapper">
+        <h3>{{content.title}}</h3>
+        <p>{{content.description}}</p>
+
+    </div>
+</ng-template>
+
+<ng-template #thirdTemplate let-content="content">
+    <div class="third-wrapper">
+        <h3>{{content.title}}</h3>
+        <p>{{content.description}}</p>
+    </div>
+</ng-template>

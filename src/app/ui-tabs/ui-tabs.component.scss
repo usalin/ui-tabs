@@ -1,0 +1,9 @@
+.tab-label-container {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+
+.active {
+    border: 1px solid blue;
+}
