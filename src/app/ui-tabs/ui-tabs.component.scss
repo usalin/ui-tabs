@@ -1,9 +1,30 @@
-.tab-label-container {
+
+.nav {
   display: flex;
-  width: 400px;
   justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
 }
 
-.active {
-    border: 1px solid blue;
+.nav-item {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  user-select: none;
 }
+
+.nav-item.active {
+  border-bottom: 3px solid lightblue;
+}
+
+.nav-item:hover {
+  background-color: #eee;
+}
+
+.nav-item:not(.active):hover {
+  border-bottom: 3px solid #ccc;
+  padding-bottom: 7px;
+}
+

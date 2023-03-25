@@ -9,6 +9,7 @@
     <div class="first-wrapper">
         <h3>{{content.title}}</h3>
         <p>{{content.description}}</p>
+        <div class="first-image"></div>
     </div>
 </ng-template>
 
@@ -16,13 +17,23 @@
     <div class="second-wrapper">
         <h3>{{content.title}}</h3>
         <p>{{content.description}}</p>
-
+        <div class="second-image"></div>
     </div>
 </ng-template>
 
 <ng-template #thirdTemplate let-content="content">
     <div class="third-wrapper">
-        <h3>{{content.title}}</h3>
-        <p>{{content.description}}</p>
+        <div class="left-column">
+            <h3>{{content.title}}</h3>
+            <p>{{content.description}}</p>
+            <div class="third-first-image"></div>
+
+        </div>
+        <div class="right-column">
+            <h3>Some Other Title here</h3>
+            <p>Some Text here</p>
+            <div class="third-second-image"></div>
+
+        </div>
     </div>
 </ng-template>

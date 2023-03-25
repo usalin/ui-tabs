@@ -17,8 +17,8 @@ export class AppComponent {
   tab2 = 'Tab 2';
   tab3 = 'Tab 3';
 
-  content1: Content = {title: 'First Items Title', description: 'First Items'};
-  content2: Content = {title: 'Second Items Title '};
-  content3: Content = {title: 'Third Items Title '};
+  content1: Content = {title: 'First Template Title', description: 'First Template Description'};
+  content2: Content = {title: 'Second Template Title', description: 'Second Template Description'};
+  content3: Content = {title: 'Third Template Title', description: 'Third Template Description' };
 
 }
